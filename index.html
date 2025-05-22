@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>My Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004b1b;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fafafa;
+            font-weight: bold;
+            padding: 15px 20px;
+            
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: cyan;
+            box-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 40px cyan;
+        }
+
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 10px 0;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: scroll 40s linear infinite;
+        }
+
+        .marquee img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            margin: 0 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        hr {
+            border: 1px solid #5c677d;
+            margin: 20px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ddcdcd;
+        }
+
+        .links,
+        .collaboration,
+        .upcoming-events {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #b8afaf;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .links h2,
+        .collaboration h2,
+        .upcoming-events h2 {
+            margin-bottom: 10px;
+            color: #0a3d62;
+        }
+
+        .links a {
+            color: #0a3d62;
+            display: block;
+            margin: 5px 0;
+            transition: color 0.3s;
+        }
+
+        .links a:hover {
+            color: #5c677d;
+        }
+
+        .event-item {
+            background-color: #e0f7fa;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(0%);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+    
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .marquee img {
+                width: 200px;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="active">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="registration.html">REGISTER HERE</a>
+        <a href="sudo.html">SIGN IN</a>
+    </nav>
+    <div class="container">
+        <div class="marquee">
+            <div class="marquee-content">
+                <img src="car1.jpg" alt="Car 1">
+                <img src="car2.jpg" alt="Car 2">
+                <img src="car3.jpg" alt="Car 3">
+                <img src="car4.jpg" alt="Car 4">
+                <img src="car5.jpg" alt="Car 5">
+                <img src="car6.jpg" alt="Car 6">
+                <img src="car7.jpg" alt="Car 7">
+                <img src="car8.jpg" alt="Car 8">
+                <img src="car9.jpg" alt="Car 9">
+                <img src="car10.jpg" alt="Car 10">
+            </div>
+        </div>
+
+        <div class="links">
+            <h2>Related Links</h2>
+            <a href="#link1">Link 1</a>
+            <a href="#link2">Link 2</a>
+            <a href="#link3">Link 3</a>
+        </div>
+
+        <div class="collaboration">
+            <h2>Collaboration Projects</h2>
+            <p>Details about projects you are collaborating on.</p>
+            <a href="#project1">Project 1</a>
+            <a href="#project2">Project 2</a>
+        </div>
+
+        <div class="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <div class="event-item">Event 1: Date and description</div>
+            <div class="event-item">Event 2: Date and description</div>
+            <div class="event-item">Event 3: Date and description</div>
+        </div>
+
+    </div>
+</body>
+
+</html>
